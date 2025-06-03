@@ -1,3 +1,11 @@
+# Build Files
+build
+
+# Misc Files
+.cache
+files
+*.asm
+
 # Prerequisites
 *.d
 
@@ -30,3 +38,4 @@
 *.exe
 *.out
 *.app
+
