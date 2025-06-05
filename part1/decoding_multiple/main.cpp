@@ -7,11 +7,11 @@
 int main()
 {
     std::filesystem::path const single_mov_file{
-        "../../../"
+        "../../../../"
         "computer_enhance/perfaware/part1/listing_0037_single_register_mov"
     };
     std::filesystem::path const many_mov_file{
-        "../../../"
+        "../../../../"
         "computer_enhance/perfaware/part1/listing_0038_many_register_mov"
     };
 
