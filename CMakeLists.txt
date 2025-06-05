@@ -24,14 +24,15 @@ add_compile_options(
     -Wsign-conversion
     -Wunused
     -fsanitize=address
+    -fsanitize=undefined
     -g3
 )
 
-add_executable(decode)
-
-target_sources(decode PRIVATE
-    main.cpp
+add_subdirectory(
+    part1/instruction_decoding
 )
 
-target_link_options(decode PRIVATE -fsanitize=address)
+add_subdirectory(
+    part1/decoding_multiple
+)
 

@@ -6,8 +6,14 @@
 
 int main()
 {
-    std::filesystem::path const single_mov_file{ "files/listing_0037" };
-    std::filesystem::path const many_mov_file{ "files/listing_0038" };
+    std::filesystem::path const single_mov_file{
+        "../../../"
+        "computer_enhance/perfaware/part1/listing_0037_single_register_mov"
+    };
+    std::filesystem::path const many_mov_file{
+        "../../../"
+        "computer_enhance/perfaware/part1/listing_0038_many_register_mov"
+    };
 
     if (!std::filesystem::exists(single_mov_file))
     {
@@ -21,8 +27,8 @@ int main()
         return 1;
     }
 
-    std::filesystem::path const single_mov_out{ "decoded_single.asm" };
-    std::filesystem::path const many_mov_out{ "decoded_many.asm" };
+    std::filesystem::path const single_mov_out{ "listing_0037.asm" };
+    std::filesystem::path const many_mov_out{ "listing_0038.asm" };
 
     decode_file(single_mov_file, single_mov_out);
     decode_file(many_mov_file, many_mov_out);
